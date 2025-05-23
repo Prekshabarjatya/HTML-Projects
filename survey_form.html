@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Please fill out this quick survey to help us improve our services.</p>
+
+  <form id="survey-form">
+
+    <!-- Name Input -->
+    <label id="name-label" for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br><br>
+
+    <!-- Number Input -->
+    <label id="number-label" for="number">Age:</label><br>
+    <input type="number" id="number" name="number" min="10" max="99" placeholder="Enter your age (10-99)" required><br><br>
+
+    <!-- Dropdown Selection -->
+    <label for="dropdown">How did you hear about us?</label><br>
+    <select id="dropdown" name="dropdown" required>
+      <option value="">--Please choose an option--</option>
+      <option value="social-media">Social Media</option>
+      <option value="friend">Friend</option>
+      <option value="advertisement">Advertisement</option>
+    </select><br><br>
+
+    <!-- Radio Buttons -->
+    <p>What is your favorite color?</p>
+    <label>
+      <input type="radio" name="color" value="red" required> Red
+    </label><br>
+    <label>
+      <input type="radio" name="color" value="blue"> Blue
+    </label><br><br>
+
+    <!-- Checkboxes -->
+    <p>Select your hobbies:</p>
+    <label>
+      <input type="checkbox" name="hobbies" value="reading"> Reading
+    </label><br>
+    <label>
+      <input type="checkbox" name="hobbies" value="sports"> Sports
+    </label><br>
+    <label>
+      <input type="checkbox" name="hobbies" value="music"> Music
+    </label><br><br>
+
+    <!-- Textarea -->
+    <label for="comments">Additional comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" placeholder="Any additional feedback?"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
